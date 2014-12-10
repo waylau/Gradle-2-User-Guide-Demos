@@ -1,0 +1,5 @@
+dependencies {
+    assert delegate == project.dependencies
+    testCompile('junit:junit:4.11')
+    delegate.testCompile('junit:junit:4.11')
+}

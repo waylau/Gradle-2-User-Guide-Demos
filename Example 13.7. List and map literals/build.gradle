@@ -1,0 +1,15 @@
+// List literal
+test.includes = ['org/gradle/api/**', 'org/gradle/internal/**']
+
+List<String> list = new ArrayList<String>()
+list.add('org/gradle/api/**')
+list.add('org/gradle/internal/**')
+test.includes = list
+
+// Map literal.
+Map<String, String> map = [key1:'value1', key2: 'value2']
+
+// Groovy will coerce named arguments
+// into a single map argument
+apply plugin: 'java'
+

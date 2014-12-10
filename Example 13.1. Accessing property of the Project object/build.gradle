@@ -1,0 +1,2 @@
+println name
+println project.name

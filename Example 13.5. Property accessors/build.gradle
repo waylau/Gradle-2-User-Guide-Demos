@@ -1,0 +1,8 @@
+
+// Using a getter method
+println project.buildDir
+println getProject().getBuildDir()
+
+// Using a setter method
+project.buildDir = 'target'
+getProject().setBuildDir('target')

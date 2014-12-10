@@ -1,0 +1,2 @@
+test.systemProperty 'some.prop', 'value'
+test.systemProperty('some.prop', 'value')

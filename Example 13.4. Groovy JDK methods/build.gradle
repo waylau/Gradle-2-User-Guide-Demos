@@ -1,0 +1,2 @@
+// Iterable gets an each() method
+configurations.runtime.each { File f -> println f }

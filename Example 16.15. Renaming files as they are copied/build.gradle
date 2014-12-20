@@ -1,0 +1,11 @@
+task rename(type: Copy) {
+    from 'src/main/webapp'
+    into 'build/explodedWar'
+    // Use a closure to map the file name
+    rename { String fileName ->
+        fileName.replace('-staging-', '')
+    }
+    // Use a regular expression to map the file name
+    rename '(.+)-staging-(.+)', '$1$2'
+    rename(/(.+)-staging-(.+)/, '$1$2')
+}

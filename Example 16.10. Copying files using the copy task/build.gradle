@@ -1,0 +1,4 @@
+task copyTask(type: Copy) {
+    from 'src/main/webapp'
+    into 'build/explodedWar'
+}

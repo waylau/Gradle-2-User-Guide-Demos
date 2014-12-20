@@ -1,0 +1,17 @@
+// Iterate over the contents of a tree
+tree.each {File file ->
+    println file
+}
+
+// Filter a tree
+FileTree filtered = tree.matching {
+    include 'org/gradle/api/**'
+}
+
+// Add trees together
+FileTree sum = tree + fileTree(dir: 'src/test')
+
+// Visit the elements of the tree
+tree.visit {element ->
+    println "$element.relativePath => $element.file"
+}

@@ -1,0 +1,8 @@
+// Using a relative path 使用相对路径
+File configFile = file('src/config.xml')
+
+// Using an absolute path 使用绝对路径
+configFile = file(configFile.absolutePath)
+
+// Using a File object with a relative path 使用文件对象中的相对路径
+configFile = file(new File('src/config.xml'))

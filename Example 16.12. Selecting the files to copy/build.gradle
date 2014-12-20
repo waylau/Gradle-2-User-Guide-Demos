@@ -1,0 +1,8 @@
+task copyTaskWithPatterns(type: Copy) {
+    from 'src/main/webapp'
+    into 'build/explodedWar'
+    include '**/*.html'
+    include '**/*.jsp'
+    exclude { details -> details.file.name.endsWith('.html') &&
+                         details.file.text.contains('staging') }
+}

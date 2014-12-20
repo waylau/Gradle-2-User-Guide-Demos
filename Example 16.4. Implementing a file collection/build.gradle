@@ -1,0 +1,14 @@
+task list << {
+    File srcDir
+
+    // Create a file collection using a closure
+    collection = files { srcDir.listFiles() }
+
+    srcDir = file('src')
+    println "Contents of $srcDir.name"
+    collection.collect { relativePath(it) }.sort().each { println it }
+
+    srcDir = file('src2')
+    println "Contents of $srcDir.name"
+    collection.collect { relativePath(it) }.sort().each { println it }
+}

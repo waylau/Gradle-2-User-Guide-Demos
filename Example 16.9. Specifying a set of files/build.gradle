@@ -1,0 +1,10 @@
+compile {
+    // Add some source directories use String paths
+    source 'src/main/java', 'src/main/groovy'
+
+    // Add a source directory using a File object
+    source file('../shared/java')
+
+    // Add some source directories using a closure
+    source { file('src/test/').listFiles() }
+}

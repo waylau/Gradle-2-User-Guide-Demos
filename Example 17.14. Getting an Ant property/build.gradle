@@ -1,0 +1,3 @@
+println ant.antProp
+println ant.properties.antProp
+println ant.properties['antProp']

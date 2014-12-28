@@ -1,0 +1,3 @@
+ant.path(id: 'classpath', location: 'libs')
+ant.references.classpath = ant.path(location: 'libs')
+ant.references['classpath'] = ant.path(location: 'libs')

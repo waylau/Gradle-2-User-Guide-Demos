@@ -1,0 +1,4 @@
+ant.buildDir = buildDir
+ant.properties.buildDir = buildDir
+ant.properties['buildDir'] = buildDir
+ant.property(name: 'buildDir', location: buildDir)

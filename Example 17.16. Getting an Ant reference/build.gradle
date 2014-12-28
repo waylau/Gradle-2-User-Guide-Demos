@@ -1,0 +1,2 @@
+println ant.references.antPath
+println ant.references['antPath']

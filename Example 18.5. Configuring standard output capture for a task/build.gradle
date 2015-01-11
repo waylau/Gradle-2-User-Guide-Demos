@@ -1,0 +1,6 @@
+task logInfo {
+    logging.captureStandardOutput LogLevel.INFO
+    doFirst {
+        println 'A task message which is logged at INFO level'
+    }
+}

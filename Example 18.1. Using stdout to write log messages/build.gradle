@@ -1,0 +1,1 @@
+println 'A message which is logged at QUIET level'
